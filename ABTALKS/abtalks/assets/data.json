@@ -1,0 +1,65 @@
+{
+  "student": {
+    "name": "Aditi Rao",
+    "initials": "AR",
+    "college": "VIT Vellore",
+    "track": "Web Development",
+    "startDate": "2026-07-27",
+    "currentDay": 12,
+    "streak": 9,
+    "longestStreak": 9,
+    "embers": 1,
+    "embersEarnedAt": 5,
+    "cohortPercentile": 18,
+    "cohortSize": 412,
+    "badges": [
+      { "id": "first-commit", "label": "First Commit", "earned": true },
+      { "id": "seven-day", "label": "7-Day Streak", "earned": true },
+      { "id": "ember-saver", "label": "Ember Saver", "earned": true },
+      { "id": "halfway", "label": "Halfway There", "earned": false },
+      { "id": "30-day", "label": "30-Day Streak", "earned": false },
+      { "id": "finisher", "label": "60-Day Finisher", "earned": false }
+    ]
+  },
+  "stats": {
+    "totalStudents": 12480,
+    "totalCommits": 341902,
+    "colleges": 260
+  },
+  "tracks": ["Web Development", "DSA & CP", "Machine Learning", "Mobile Apps", "Open Source"],
+  "days": [
+    { "day": 1, "status": "done" },
+    { "day": 2, "status": "done" },
+    { "day": 3, "status": "done" },
+    { "day": 4, "status": "done" },
+    { "day": 5, "status": "done" },
+    { "day": 6, "status": "done" },
+    { "day": 7, "status": "missed-saved", "note": "Ember shield used — streak protected" },
+    { "day": 8, "status": "done" },
+    { "day": 9, "status": "done" },
+    { "day": 10, "status": "done" },
+    { "day": 11, "status": "done" },
+    { "day": 12, "status": "pending" }
+  ],
+  "day12": {
+    "day": 12,
+    "track": "Web Development",
+    "title": "Build a responsive pricing card component",
+    "difficulty": "Medium",
+    "estTime": "45–60 min",
+    "description": "Recruiters skim GitHub for UI instinct before they read a resume. Today's task checks whether you can turn a flat spec into something that actually looks shippable, on a phone screen first.",
+    "requirements": [
+      "Three pricing tiers (Free, Pro, Team) in a single responsive layout",
+      "One tier visually marked as \"Most Popular\"",
+      "Layout must not break below 375px width",
+      "Use CSS Grid or Flexbox — no absolute-position hacks",
+      "Include hover or tap states on the CTA buttons"
+    ],
+    "hints": [
+      "Start mobile-first: design the 390px stack before you widen anything.",
+      "clamp() is your friend for font sizes across breakpoints.",
+      "Ship it ugly, then polish — a working layout beats a perfect one you didn't finish."
+    ],
+    "resource": { "label": "Reference: CSS Grid pricing patterns", "url": "https://css-tricks.com/snippets/css/complete-guide-grid/" }
+  }
+}

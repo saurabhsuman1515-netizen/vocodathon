@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ABTalks — 60 days. One commit a day.</title>
+<meta name="description" content="A 60-day coding challenge for Indian college students. Build daily, prove it on GitHub and LinkedIn, get seen by recruiters." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="brand"><span class="dot">&gt;_</span>ABTalks</div>
+  <button class="nav-cta" onclick="location.href='dashboard/'">Log in</button>
+</nav>
+
+<main class="shell" style="position:relative;z-index:1;">
+
+  <!-- HERO -->
+  <section style="padding-top:28px;">
+    <div class="eyebrow">60-day challenge · opens tonight</div>
+    <h1 style="font-size:34px; line-height:1.12; margin-bottom:14px;">
+      60 days. One commit a day.<br/>Zero excuses.
+    </h1>
+    <p style="font-size:15px; margin-bottom:22px;">
+      Pick a track, build something small every day, and post the proof. In two months your GitHub and LinkedIn show recruiters what your resume can't.
+    </p>
+
+    <div class="terminal" style="margin-bottom:18px;">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+        <span class="path">aditi@abtalks:~/day-01</span>
+      </div>
+      <div class="terminal-body">
+        <div class="line-comment"># everyone starts here</div>
+        <div><span class="line-prompt">$</span> git commit -m "day 1: hello world"</div>
+        <div class="line-out">[main 3f9a2c1] day 1: hello world</div>
+        <div><span class="line-prompt">$</span> git push origin main</div>
+        <div class="line-out">→ streak: 1 day<span class="caret"></span></div>
+      </div>
+    </div>
+
+    <div class="stack" style="gap:12px;">
+      <button class="btn btn-primary" onclick="location.href='dashboard/'">Start Day 1 tonight →</button>
+      <div class="row" style="font-size:12px; color:var(--text-faint); font-family:var(--font-mono);">
+        <span>No credit card</span><span>·</span><span>2 min to join</span><span>·</span><span>Free forever</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section style="margin-top:36px;" id="trust">
+    <div class="card" style="display:flex; justify-content:space-between; text-align:center;">
+      <div>
+        <div class="mono" style="font-size:20px; font-weight:700; color:var(--ember);" id="stat-students">—</div>
+        <div class="faint" style="font-size:11px;">students</div>
+      </div>
+      <div>
+        <div class="mono" style="font-size:20px; font-weight:700; color:var(--mint);" id="stat-commits">—</div>
+        <div class="faint" style="font-size:11px;">commits logged</div>
+      </div>
+      <div>
+        <div class="mono" style="font-size:20px; font-weight:700;" id="stat-colleges">—</div>
+        <div class="faint" style="font-size:11px;">colleges</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="margin-top:40px;">
+    <div class="section-title">How it works</div>
+    <div class="stack">
+      <div class="card row" style="align-items:flex-start; gap:14px;">
+        <div class="mono" style="color:var(--ember); font-weight:700; font-size:18px;">01</div>
+        <div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Pick a track</h3>
+          <p style="font-size:13.5px;">Web Dev, DSA, ML, Mobile or Open Source. Switch anytime before Day 5.</p>
+        </div>
+      </div>
+      <div class="card row" style="align-items:flex-start; gap:14px;">
+        <div class="mono" style="color:var(--ember); font-weight:700; font-size:18px;">02</div>
+        <div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Build and prove it, daily</h3>
+          <p style="font-size:13.5px;">Every day unlocks one small, real task. Submit a GitHub commit and a LinkedIn post to lock it in.</p>
+        </div>
+      </div>
+      <div class="card row" style="align-items:flex-start; gap:14px;">
+        <div class="mono" style="color:var(--ember); font-weight:700; font-size:18px;">03</div>
+        <div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Recruiters see the streak</h3>
+          <p style="font-size:13.5px;">60 days of public proof beats one line on a resume. Your commit history becomes your pitch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE STREAK MECHANIC / SIGNATURE IDEA -->
+  <section style="margin-top:40px;">
+    <div class="section-title">The commit strip</div>
+    <div class="card">
+      <p style="font-size:13.5px; margin-bottom:14px;">Every day you ship fills one cell. Miss a day and it usually breaks your streak — real life happens, so we built in one exception:</p>
+      <div class="strip" style="margin-bottom:14px;" id="mini-strip"></div>
+      <div class="row" style="align-items:flex-start; gap:10px; padding:12px; background:var(--bg-elevated); border-radius:var(--radius-s); border:1px solid var(--border);">
+        <span style="font-size:18px;">🔥</span>
+        <p style="font-size:12.5px; color:var(--text-primary);"><strong>Ember shields.</strong> Every 5-day streak earns one. Miss a day by accident and a shield auto-covers it — your streak survives, no guilt trip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRACKS -->
+  <section style="margin-top:40px;">
+    <div class="section-title">Tracks</div>
+    <div class="stack" style="flex-direction:row; flex-wrap:wrap; gap:8px;" id="tracks"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section style="margin-top:40px;">
+    <div class="section-title">From past cohorts</div>
+    <div class="stack">
+      <div class="card">
+        <p style="font-size:13.5px; color:var(--text-primary); margin-bottom:10px;">"I had 3 half-finished side projects before this. The daily task forced me to actually ship instead of planning forever."</p>
+        <div class="mono faint" style="font-size:11px;">— Karthik M., final year, NIT Trichy</div>
+      </div>
+      <div class="card">
+        <p style="font-size:13.5px; color:var(--text-primary); margin-bottom:10px;">"A recruiter messaged me because of my LinkedIn streak posts, not my resume. That never happened before Day 40."</p>
+        <div class="mono faint" style="font-size:11px;">— Sneha P., 3rd year, VIT Vellore</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="margin-top:44px;">
+    <div class="card" style="text-align:center; padding:26px 20px; background:linear-gradient(180deg, var(--bg-surface), var(--bg-elevated));">
+      <h2 style="font-size:22px; margin-bottom:8px;">Your streak starts at zero.</h2>
+      <p style="font-size:13.5px; margin-bottom:18px;">That's fine. Everyone's does. Day 1 takes ten minutes.</p>
+      <button class="btn btn-primary" onclick="location.href='dashboard/'">Start Day 1 tonight →</button>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span>ABTalks © 2026</span>
+    <span class="mono">made for 1am coders</span>
+  </div>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+loadData().then(data => {
+  document.getElementById('stat-students').textContent = data.stats.totalStudents.toLocaleString('en-IN') + '+';
+  document.getElementById('stat-commits').textContent = (data.stats.totalCommits/1000).toFixed(0) + 'K+';
+  document.getElementById('stat-colleges').textContent = data.stats.colleges + '+';
+
+  document.getElementById('tracks').innerHTML = data.tracks.map(t =>
+    `<span class="chip">${t}</span>`
+  ).join('');
+
+  // mini preview strip: first 24 cells of the real strip, for texture
+  const mini = document.getElementById('mini-strip');
+  renderStrip(mini, data.days, data.student.currentDay, 24);
+});
+</script>
+</body>
+</html>
